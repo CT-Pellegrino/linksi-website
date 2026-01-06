@@ -6,6 +6,70 @@
   <title>Linksi: Shared Family Calendar</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="assets/Linksi Icon2.png">
+  <style>
+    /* App Store Buttons Container */
+    .app-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    /* Individual Button Styling */
+    .app-button {
+      display: inline-block;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .app-button:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .app-button:active {
+      transform: translateY(0);
+    }
+
+    /* App Store Badge Images */
+    .app-button img {
+      height: 54px;
+      width: auto;
+      display: block;
+    }
+
+    /* Coming Soon Button - Disabled State */
+    .app-button.coming-soon {
+      cursor: default;
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    .app-button.coming-soon:hover {
+      transform: none;
+      opacity: 0.6;
+    }
+
+    /* Responsive: Stack vertically on mobile too, but adjust spacing */
+    @media (max-width: 768px) {
+      .app-buttons {
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      .app-button img {
+        height: 48px;
+      }
+    }
+
+    /* Optional: Side-by-side on larger screens if preferred */
+    @media (min-width: 769px) {
+      .app-buttons {
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Navbar -->
@@ -27,8 +91,24 @@
     <div class="container hero-container">
       <h1>Linksi</h1>
       <p>Your personal calendar aggregator. Connect once and manage all your calendars in one place.</p>
-      <a href="https://apps.apple.com/ca/app/linksi-family-shared-calendar/id6756554394" class="button">Download for iOS</a>
-      <a href="#" class="button button-secondary" style="cursor: default;">Android version in Beta testing: Coming Soon!</a>
+      
+      <div class="app-buttons">
+        <!-- iOS App Store Button -->
+        <a href="https://apps.apple.com/ca/app/linksi-family-shared-calendar/id6756554394" 
+           class="app-button"
+           target="_blank"
+           rel="noopener noreferrer">
+          <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1234567890" 
+               alt="Download on the App Store">
+        </a>
+        
+        <!-- Android - Coming Soon -->
+        <div class="app-button coming-soon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
+               alt="Get it on Google Play - Coming Soon">
+          <p style="text-align: center; margin-top: 8px; font-size: 14px; color: #666;">Beta Testing - Coming Soon</p>
+        </div>
+      </div>
     </div>
   </header>
   <!-- Features Section -->
