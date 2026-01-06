@@ -3,185 +3,353 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Linksi: Shared Family Calendar</title>
+  <title>Linksi – The Shared Calendar You'll Actually Love Using</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="assets/Linksi Icon2.png">
-  <style>
-    /* App Store Buttons Container */
-    .app-buttons {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 16px;
-      margin-top: 32px;
-      width: 100%;
-    }
-
-    /* Individual Button Styling */
-    .app-button {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.2s ease, opacity 0.2s ease;
-      width: 100%;
-      max-width: 250px;
-    }
-
-    .app-button:hover {
-      transform: translateY(-2px);
-      opacity: 0.9;
-    }
-
-    .app-button:active {
-      transform: translateY(0);
-    }
-
-    /* App Store Badge Images */
-    .app-button img {
-      height: 54px;
-      width: auto;
-      display: block;
-    }
-
-    .app-button p {
-      text-align: center;
-      margin: 8px auto 0 auto;
-      padding: 0;
-      font-size: 14px;
-      color: #666;
-      width: 100%;
-      display: block;
-    }
-
-    /* Coming Soon Button - Disabled State */
-    .app-button.coming-soon {
-      cursor: default;
-      opacity: 0.6;
-      pointer-events: none;
-    }
-
-    .app-button.coming-soon:hover {
-      transform: none;
-      opacity: 0.6;
-    }
-
-    /* Responsive: Stack vertically on mobile too, but adjust spacing */
-    @media (max-width: 768px) {
-      .app-buttons {
-        gap: 10px;
-        margin-top: 16px;
-      }
-
-      .app-button img {
-        height: 44px;
-      }
-
-      .app-button p {
-        font-size: 12px;
-        margin-top: 4px;
-      }
-
-      /* Compact hero section for mobile */
-      .hero {
-        padding: 40px 20px !important;
-        min-height: auto !important;
-      }
-
-      .hero-container {
-        padding: 0 !important;
-      }
-
-      .hero h1 {
-        font-size: 2.5rem !important;
-        margin-bottom: 12px !important;
-      }
-
-      .hero p {
-        font-size: 1rem !important;
-        margin-bottom: 0 !important;
-      }
-    }
-
-    /* Optional: Side-by-side on larger screens if preferred */
-    @media (min-width: 769px) {
-      .app-buttons {
-        flex-direction: column;
-        gap: 16px;
-      }
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar">
-    <div class="container nav-container">
+    <div class="nav-container">
       <a href="index.html" class="logo-link">
         <img src="assets/Linksi Icon2.png" alt="Linksi Logo" class="logo">
+        <span class="logo-text">Linksi</span>
       </a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="data-deletion.html">Data Deletion</a></li>
-        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#why">Why Linksi</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="https://apps.apple.com/ca/app/linksi-family-shared-calendar/id6756554394" class="download-nav" target="_blank">Download</a></li>
       </ul>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </nav>
+
   <!-- Hero Section -->
   <header class="hero">
-    <div class="container hero-container">
-      <h1>Linksi</h1>
-      <p>The very best shared family calendar, built for life with our new born. Connect once and manage all your calendars in one place.</p>
+    <div class="hero-background"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Made for Families</div>
+      <h1>The Shared Calendar You'll Actually Love Using</h1>
+      <p class="hero-subtitle">No more "Did you get milk?" texts! Keep your family organized with smart summaries, shared lists, and live updates—all for free.</p>
       
       <div class="app-buttons">
-        <!-- iOS App Store Button -->
         <a href="https://apps.apple.com/ca/app/linksi-family-shared-calendar/id6756554394" 
-           class="app-button"
+           class="app-button primary"
            target="_blank"
            rel="noopener noreferrer">
-          <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1234567890" 
-               alt="Download on the App Store">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.5 0.5C13.75 0.55 12.8 0.95 12.2 1.6C11.65 2.2 11.15 3.15 11.3 4.05C12.15 4.1 13.05 3.65 13.6 3C14.15 2.35 14.6 1.4 14.5 0.5Z" fill="currentColor"/>
+            <path d="M17.4 6.75C16.3 5.5 14.85 4.85 13.5 4.85C11.75 4.85 11 5.6 9.9 5.6C8.75 5.6 7.75 4.85 6.3 4.85C4.8 4.85 3.2 5.65 2.15 7.15C0.5 9.5 0.8 13.85 3.05 17.3C3.95 18.65 5.1 20.15 6.6 20.15C7.95 20.15 8.4 19.35 10.1 19.35C11.8 19.35 12.15 20.15 13.65 20.15C15.15 20.15 16.35 18.5 17.25 17.15C17.95 16.1 18.2 15.55 18.75 14.35C15.55 13.1 15 8.85 17.4 6.75Z" fill="currentColor"/>
+          </svg>
+          Download on the App Store
         </a>
         
-        <!-- Android - Coming Soon -->
-        <div class="app-button coming-soon">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
-               alt="Get it on Google Play - Coming Soon">
-          <p>Android Version in Beta Testing - Coming Soon!</p>
+        <div class="app-button secondary disabled">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.5 10L7 4.5L12.5 10L7 15.5L1.5 10Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M7 10L18.5 10" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M14.5 6L18.5 10L14.5 14" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          </svg>
+          Android Coming Soon
         </div>
+      </div>
+
+      <div class="social-proof">
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span class="rating-text">5.0 Rating</span>
+        </div>
+        <div class="divider"></div>
+        <div class="free-badge">100% Free</div>
       </div>
     </div>
   </header>
+
+  <!-- Problem Statement -->
+  <section class="problem-section">
+    <div class="container-wide">
+      <div class="problem-content">
+        <h2>We're So Tired of Clunky, Overcomplicated Shared Calendars</h2>
+        <p>While adjusting to life with our first baby and testing every big name calendar app, we realized there just wasn't a free option that truly worked for families and groups.</p>
+        <p class="highlight">That's why we built Linksi — a simple, beautiful shared calendar designed for everyday life.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Features Section -->
-  <section class="features">
-    <div class="container">
-      <h2>Why Linksi?</h2>
-      <div class="feature-cards">
-        <div class="card">
-          <h3>All Calendars in One Place</h3>
-          <p>Import multiple calendars and keep them synchronized in real time.</p>
+  <section class="features" id="features">
+    <div class="container-wide">
+      <div class="section-header">
+        <h2>Everything You Need to Stay Connected</h2>
+        <p>Powerful features that make family coordination effortless</p>
+      </div>
+      
+      <div class="feature-grid">
+        <div class="feature-card featured">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Smart Summary</h3>
+          <p>Get daily, weekly, or yearly overviews automatically generated, so you always know what's ahead.</p>
         </div>
-        <div class="card">
-          <h3>Smart Notifications</h3>
-          <p>Get notified about upcoming events and deadlines.</p>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Super Secretary</h3>
+          <p>Create and schedule events in plain English, avoiding the hassle of classic event entry.</p>
         </div>
-        <div class="card">
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M3 9H21" stroke="currentColor" stroke-width="2"/>
+              <path d="M8 4V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 4V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Two Stunning Views</h3>
+          <p>Switch effortlessly between a clean grid view or a streamlined agenda list.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M13.73 21C13.5542 21.3031 13.3019 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Live Alerts</h3>
+          <p>Get instant updates when events are added, changed, or canceled.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 11L12 14L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Shared Lists</h3>
+          <p>Keep track of shopping runs, chores, and tasks that everyone can see and update.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+              <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>RSVP for Events</h3>
+          <p>Know who's coming at a glance with built-in RSVP tracking.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 16V8C20.9996 7.64927 20.9071 7.30481 20.7315 7.00116C20.556 6.69751 20.3037 6.44536 20 6.27L13 2.27C12.696 2.09446 12.3511 2.00205 12 2.00205C11.6489 2.00205 11.304 2.09446 11 2.27L4 6.27C3.69626 6.44536 3.44398 6.69751 3.26846 7.00116C3.09294 7.30481 3.00036 7.64927 3 8V16C3.00036 16.3507 3.09294 16.6952 3.26846 16.9988C3.44398 17.3025 3.69626 17.5546 4 17.73L11 21.73C11.304 21.9055 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9055 13 21.73L20 17.73C20.3037 17.5546 20.556 17.3025 20.7315 16.9988C20.9071 16.6952 20.9996 16.3507 21 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3.27 6.96L12 12.01L20.73 6.96" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 22.08V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Calendar Imports</h3>
+          <p>Import Google and Apple calendars. Bring your schedules together in one place.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
           <h3>Secure & Private</h3>
           <p>Your calendar data stays secure. We never share it without consent.</p>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Why Linksi Section -->
+  <section class="why-section" id="why">
+    <div class="container-wide">
+      <div class="why-content">
+        <div class="why-text">
+          <h2>Why Linksi?</h2>
+          <ul class="why-list">
+            <li>
+              <div class="why-icon">✓</div>
+              <div>
+                <strong>Free to use</strong>
+                <span>No clutter or paywalls blocking the basics</span>
+              </div>
+            </li>
+            <li>
+              <div class="why-icon">✓</div>
+              <div>
+                <strong>Designed to be intuitive</strong>
+                <span>Enjoyable and easy, not overwhelming</span>
+              </div>
+            </li>
+            <li>
+              <div class="why-icon">✓</div>
+              <div>
+                <strong>Built from real-life needs</strong>
+                <span>Created by parents for families, but perfect for any group</span>
+              </div>
+            </li>
+            <li>
+              <div class="why-icon">✓</div>
+              <div>
+                <strong>Perfect for everyone</strong>
+                <span>Parents, partners, roommates, work teams, or any group</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="why-visual">
+          <div class="floating-card card-1">
+            <div class="card-header">Today's Events</div>
+            <div class="card-item">🏥 Doctor's Appointment</div>
+            <div class="card-item">🛒 Grocery Shopping</div>
+            <div class="card-item">⚽ Soccer Practice</div>
+          </div>
+          <div class="floating-card card-2">
+            <div class="card-header">Shopping List</div>
+            <div class="card-item">✓ Milk</div>
+            <div class="card-item">✓ Bread</div>
+            <div class="card-item">○ Eggs</div>
+          </div>
+          <div class="floating-card card-3">
+            <div class="card-header">Upcoming</div>
+            <div class="card-item">🎂 Birthday Party</div>
+            <div class="card-item">✈️ Family Vacation</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>Stay on the Same Page, Effortlessly</h2>
+      <p>Whether you're planning family events, organizing weekly tasks, or coordinating with friends, Linksi makes staying connected simple.</p>
+      <a href="https://apps.apple.com/ca/app/linksi-family-shared-calendar/id6756554394" 
+         class="cta-button"
+         target="_blank"
+         rel="noopener noreferrer">
+        Download Linksi for Free
+      </a>
+      <p class="cta-note">Available on iPhone, iPad, Mac, Apple Watch, and Apple Vision</p>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Linksi. All rights reserved.</p>
-      <p>
-        <a href="privacy.html">Privacy Policy</a> |
-        <a href="data-deletion.html">Data Deletion</a> |
-        <a href="terms.html">Terms of Service</a>
-      </p>
+    <div class="footer-content">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <img src="assets/Linksi Icon2.png" alt="Linksi Logo" class="footer-logo">
+          <h3>Linksi</h3>
+          <p>The shared calendar you'll actually love using</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#why">Why Linksi</a></li>
+              <li><a href="https://apps.apple.com/ca/app/linksi-family-shared-calendar/id6756554394" target="_blank">Download</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+              <li><a href="data-deletion.html">Data Deletion</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="https://apps.apple.com/ca/developer/giuseppe-pellegrino/id1861375961" target="_blank">Developer</a></li>
+              <li><a href="https://linksi.cloudtect.ca">Website</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Giuseppe Pellegrino - 519Technology. All rights reserved.</p>
+      </div>
     </div>
   </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    mobileMenuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      mobileMenuToggle.classList.toggle('active');
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+          // Close mobile menu if open
+          navLinks.classList.remove('active');
+          mobileMenuToggle.classList.remove('active');
+        }
+      });
+    });
+
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.feature-card, .why-content, .floating-card').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
 </body>
 </html>

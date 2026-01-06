@@ -3,77 +3,197 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Linksi Data Deletion Policy</title>
+  <title>Data Deletion Policy - Linksi</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="assets/Linksi Icon2.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    .legal-page {
+      padding: calc(80px + 3rem) 1.5rem 3rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .legal-page h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+    
+    .legal-page .meta {
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+    }
+    
+    .legal-page h2 {
+      font-size: 1.75rem;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+    
+    .legal-page h3 {
+      font-size: 1.25rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-primary);
+    }
+    
+    .legal-page p {
+      margin-bottom: 1rem;
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+    
+    .legal-page ul,
+    .legal-page ol {
+      margin-left: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .legal-page ul {
+      list-style: disc;
+    }
+    
+    .legal-page ol {
+      list-style: decimal;
+    }
+    
+    .legal-page li {
+      margin-bottom: 0.5rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    
+    .legal-page a {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+    
+    .legal-page a:hover {
+      color: var(--primary-dark);
+    }
+    
+    .legal-page strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar">
-    <div class="container nav-container">
+    <div class="nav-container">
       <a href="index.html" class="logo-link">
         <img src="assets/Linksi Icon2.png" alt="Linksi Logo" class="logo">
+        <span class="logo-text">Linksi</span>
       </a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="data-deletion.html">Data Deletion</a></li>
-        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#why">Why Linksi</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="https://apps.apple.com/ca/app/linksi-family-shared-calendar/id6756554394" class="download-nav" target="_blank">Download</a></li>
       </ul>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </nav>
 
   <!-- Main Content -->
-  <main>
-    <div class="container content">
-      <h1>Linksi - Account and Data Deletion Instructions</h1>
-      <p><strong>Effective Date:</strong> September 22, 2025</p>
+  <main class="legal-page">
+    <h1>Linksi - Account and Data Deletion Instructions</h1>
+    <p class="meta"><strong>Effective Date:</strong> September 22, 2025</p>
 
-      <p>This page explains how users of the Linksi mobile application can request the deletion of their account and associated data. We provide two methods to ensure you have control over your data.</p>
+    <p>This page explains how users of the Linksi mobile application can request the deletion of their account and associated data. We provide two methods to ensure you have control over your data.</p>
 
-      <h2>Method 1: In-App Deletion (Recommended)</h2>
-      <p>The easiest and fastest way to permanently delete your account and all associated data is directly within the Linksi app:</p>
-      <ol>
-        <li>Open the Linksi app and log in.</li>
-        <li>Navigate to the Settings page.</li>
-        <li>Scroll to the bottom of the "App Settings" section.</li>
-        <li>Tap on "Delete Account".</li>
-        <li>Follow the on-screen confirmation prompts to finalize the deletion.</li>
-      </ol>
-      <p>Using this method will automatically trigger our secure, server-side process to erase your data.</p>
+    <h2>Method 1: In-App Deletion (Recommended)</h2>
+    <p>The easiest and fastest way to permanently delete your account and all associated data is directly within the Linksi app:</p>
+    <ol>
+      <li>Open the Linksi app and log in.</li>
+      <li>Navigate to the Settings page.</li>
+      <li>Scroll to the bottom of the "App Settings" section.</li>
+      <li>Tap on "Delete Account".</li>
+      <li>Follow the on-screen confirmation prompts to finalize the deletion.</li>
+    </ol>
+    <p>Using this method will automatically trigger our secure, server-side process to erase your data.</p>
 
-      <h2>Method 2: Manual Deletion via Email (Alternative)</h2>
-      <p>If you are unable to access your account for any reason, you can request deletion by sending an email to our support address:</p>
-      <p><strong>Email:</strong> <a href="mailto:519technology@gmail.com">519technology@gmail.com</a></p>
-      <p>Please include the following information in your email:</p>
-      <ul>
-        <li><strong>Subject Line:</strong> "Data Deletion Request"</li>
-        <li><strong>Body of the email:</strong> The email address associated with your Linksi account.</li>
-      </ul>
-      <p>Our team will process your request manually.</p>
+    <h2>Method 2: Manual Deletion via Email (Alternative)</h2>
+    <p>If you are unable to access your account for any reason, you can request deletion by sending an email to our support address:</p>
+    <p><strong>Email:</strong> <a href="mailto:519technology@gmail.com">519technology@gmail.com</a></p>
+    <p>Please include the following information in your email:</p>
+    <ul>
+      <li><strong>Subject Line:</strong> "Data Deletion Request"</li>
+      <li><strong>Body of the email:</strong> The email address associated with your Linksi account.</li>
+    </ul>
+    <p>Our team will process your request manually.</p>
 
-      <h2>Data Deletion Details</h2>
-      <p>Regardless of the method used, a deletion request will permanently erase the following data associated with your account:</p>
-      <ul>
-        <li>Your account credentials from our authentication system.</li>
-        <li>All calendars that you personally own, including all events, tasks, and list items.</li>
-        <li>Your membership from any shared calendars you were a part of.</li>
-        <li>Your user profile information, including any saved device tokens.</li>
-      </ul>
-      <p><strong>Note:</strong> This action cannot be undone.</p>
-    </div>
+    <h2>Data Deletion Details</h2>
+    <p>Regardless of the method used, a deletion request will permanently erase the following data associated with your account:</p>
+    <ul>
+      <li>Your account credentials from our authentication system.</li>
+      <li>All calendars that you personally own, including all events, tasks, and list items.</li>
+      <li>Your membership from any shared calendars you were a part of.</li>
+      <li>Your user profile information, including any saved device tokens.</li>
+    </ul>
+    <p><strong>Note:</strong> This action cannot be undone.</p>
   </main>
 
   <!-- Footer -->
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Linksi. All rights reserved.</p>
-      <p>
-        <a href="privacy.html">Privacy Policy</a> |
-        <a href="data-deletion.html">Data Deletion</a> |
-        <a href="terms.html">Terms of Service</a>
-      </p>
+    <div class="footer-content">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <img src="assets/Linksi Icon2.png" alt="Linksi Logo" class="footer-logo">
+          <h3>Linksi</h3>
+          <p>The shared calendar you'll actually love using</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="index.html#features">Features</a></li>
+              <li><a href="index.html#why">Why Linksi</a></li>
+              <li><a href="https://apps.apple.com/ca/app/linksi-family-shared-calendar/id6756554394" target="_blank">Download</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+              <li><a href="data-deletion.html">Data Deletion</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="https://apps.apple.com/ca/developer/giuseppe-pellegrino/id1861375961" target="_blank">Developer</a></li>
+              <li><a href="https://linksi.cloudtect.ca">Website</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Giuseppe Pellegrino - 519Technology. All rights reserved.</p>
+      </div>
     </div>
   </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    mobileMenuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      mobileMenuToggle.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
