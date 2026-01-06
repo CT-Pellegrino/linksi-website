@@ -5,10 +5,11 @@ This is the modernized and refreshed version of the Linksi website, redesigned t
 ## What's New
 
 ### Design Updates
-- **Modern Typography**: Switched from generic Inter font to distinctive Fraunces (display) and DM Sans (body) fonts for a more refined, professional look
+- **Professional Typography**: Using Libre Baskerville for headings (classic, authoritative) and Inter for body text (clean, readable)
 - **Enhanced Color Scheme**: Using your vibrant blue brand color (#2b9fed) from the logo with complementary gradients and visual hierarchy
 - **Distinctive Visual Style**: Added atmospheric backgrounds, floating animations, and refined spacing for a premium feel
 - **Responsive Design**: Fully optimized for all devices with smooth mobile navigation
+- **Stronger Branding**: Larger, more prominent logo especially on desktop (56px vs 40px)
 
 ### Content Updates
 - **Aligned with App Store Listing**: Homepage messaging now matches the App Store description perfectly
@@ -57,8 +58,8 @@ linksi-website/
 - Consistent border radius and spacing
 
 ### Typography
-- Display font: Fraunces (serif) for headings
-- Body font: DM Sans (sans-serif) for content
+- Display font: Libre Baskerville (serif) for headings
+- Body font: Inter (sans-serif) for content
 - Responsive font sizing using clamp()
 - Improved line heights and letter spacing
 
