@@ -124,11 +124,28 @@
     <h2>6. Limitation of Liability</h2>
     <p>The App is provided "as is" and we make no warranties or guarantees regarding its performance or reliability. To the maximum extent permitted by law, Linksi is not liable for any damages resulting from your use of the App.</p>
 
-    <h2>7. Changes to Terms</h2>
+    <h2>7. Subscriptions and In-App Purchases</h2>
+    <p>Linksi offers a Premium subscription that provides access to enhanced features.</p>
+    
+    <h3>Subscription Terms</h3>
+    <ul>
+      <li><strong>Subscription Options:</strong> Premium subscriptions are available on a monthly or annual basis.</li>
+      <li><strong>Payment:</strong> Payment will be charged to your iTunes Account at confirmation of purchase.</li>
+      <li><strong>Auto-Renewal:</strong> Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period.</li>
+      <li><strong>Renewal Charges:</strong> Your account will be charged for renewal within 24 hours prior to the end of the current period at the same price.</li>
+      <li><strong>Managing Subscriptions:</strong> You can manage and cancel your subscriptions by going to your Account Settings on the App Store after purchase.</li>
+      <li><strong>Active Period:</strong> No cancellation of the current subscription is allowed during the active subscription period.</li>
+      <li><strong>Free Trials:</strong> Any unused portion of a free trial period, if offered, will be forfeited when you purchase a subscription.</li>
+    </ul>
+
+    <h3>Refunds</h3>
+    <p>All purchases are processed through the Apple App Store. Refund requests must be submitted directly to Apple Support in accordance with Apple's refund policies. Linksi does not have access to process refunds directly.</p>
+
+    <h2>8. Changes to Terms</h2>
     <p>We may update these Terms from time to time. Updated versions will be posted on this page. Continued use of the App constitutes acceptance of the revised Terms.</p>
 
-    <h2>8. Contact Us</h2>
-    <p>If you have any questions about these Terms of Service, please contact us at <a href="/cdn-cgi/l/email-protection#5663676f2233353e38393a39312f16313b373f3a7835393b"><span class="__cf_email__" data-cfemail="eadfdbd39e8f8982848586858d93aa8d878b8386c4898587">[email&#160;protected]</span></a>.</p>
+    <h2>9. Contact Us</h2>
+    <p>If you have any questions about these Terms of Service, please contact us at <a href="mailto:support@linksi.cloudtect.ca">support@linksi.cloudtect.ca</a>.</p>
   </main>
 
   <!-- Footer -->
@@ -172,6 +189,33 @@
     </div>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     // Mobile menu toggle
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle')
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (mobileMenuToggle) {
+      mobileMenuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        mobileMenuToggle.classList.toggle('active');
+      });
+    }
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.nav-container')) {
+        navLinks.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+      }
+    });
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
